@@ -6,42 +6,28 @@ subtitle: Sub 42
 ---
 
 <div class="pretty-links">
-<div class="grid">
-<div class="unit golden-small profile-pic">
-<img class='site-profile' src="/assets/img/1.jpg">
-</div>
-<div class="unit golden-large">
-<div class="lead lead-about">
-Hi! I'm Jerome Francis, a recent graduate from TKM College of Engineering,Kollam. I'm interested in Deep Learning with a specific interest in Computer Vision and Reinforcement Learning. 
-
-
-</div>
-
-<!-- I am a fan of philosophy, aviation, sport, food, and art. In particular, the work of Arthur Schopenhauer, William Blake, Simone Weil, Leonard Cohen, Cormac McCarthy, Bon Iver, Charlie Kaufman, Wintersleep, and Dylan Thomas.  -->
-
-<!-- I did my doctoral work in the [STARS Lab](http://www.starslab.ca) (Space & Terrestrial Autonomous Robotic Systems) under the supervision of *Prof. Jonathan Kelly*. My [<i class="fa fa-file-text" aria-hidden="true"></i> Ph.D. dissertation](/assets/pdf/valentin_peretroukhin_phd_thesis.pdf) was entitled *Learned Improvements to the Visual Egomotion Pipeline*.  -->
-</div>
-</div>
+  <div class="grid">
+    <div class="unit golden-small profile-pic">
+      <img class='site-profile' src="/assets/img/1.jpg">
+    </div>
+    <div class="unit golden-large">
+      <div class="lead lead-about">
+        Hi! I'm Jerome Francis, a recent graduate from TKM College of Engineering,Kollam. I'm interested in Deep Learning with a specific interest in Computer Vision and Reinforcement Learning. 
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="grid news-about">
-<div class="unit golden-large news">
-<!--
+  <div class="unit golden-large news">
+    <h3> <i class="fa fa-newspaper-o"></i> Recent news </h3>
+    I am currently studying RL papers and implementing projects based on different concepts of RL. 
+  </div>
 
- <h3> <i class="fa fa-newspaper-o"></i> Recent news </h3>
-
-I am currently studying RL papers and implementing projects based on different concepts of RL. 
-
-</div>
-
-<div class="unit golden-small about">
-
-
-<h3> <i class="fa fa-id-card"></i> A bit more about me </h3>
-
-I love reading fiction novels about science, philosophy and a bit of history, for example, the Dan Brown series, cycling early in the morning or in the evening -- which mostly depends on the mood or work, and playing online chess or solving some chess puzzles.  
-
-</div>
+  <div class="unit golden-small about">
+    <h3> <i class="fa fa-id-card"></i> A bit more about me </h3>
+    I love reading fiction novels about science, philosophy and a bit of history, for example, the Dan Brown series, cycling early in the morning or in the evening -- which mostly depends on the mood or work, and playing online chess or solving some chess puzzles.  
+  </div>
 </div>
 
 ## Projects
@@ -76,7 +62,7 @@ I love reading fiction novels about science, philosophy and a bit of history, fo
         <p>It uses LSTM network model to learn a jazz composition and then randomly sample musical tones according to the jazz style learned. This was an assignment of week 1for a course "Sequence and Models" in Coursera.</p>
       </div>
     </div>
-    
+
   </div><!-- grid -->
 </div>
 {:/}

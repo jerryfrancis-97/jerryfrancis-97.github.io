@@ -31,14 +31,14 @@ navigation:
   - title: Publications 
     url: /research/
     desc: My publications
-  - title: Teaching
+  - title: Volunteering
     url: /teaching/
     desc: Courses I've taught
   - title: Writing
     url: /blog/
     desc: My writing
   - title: <i class='fa fa-file-text'></i> Resume
-    url: /assets/pdf/Resume_9_20.pdf
+    url: /assets/pdf/jerome_resume_9_20.pdf
 
 # Used by Jekyll to recognize what is a post and what is a page
 defaults:
