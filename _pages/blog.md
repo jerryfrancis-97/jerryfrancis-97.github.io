@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Prose and Poetry
-subtitle: The blog of Valentin Peretroukhin
+title: EnRoute 42
+subtitle: The blog of Jerome Francis
 permalink: /blog/
 ---
 
 <div class="pretty-links">
 
-<div class="lead lead-about"> I like writing. Well, no that's not true. I don't like writing. In fact, I <a href='https://youtu.be/sUMzQ0karAk?t=168'>hate writing</a>. But from time-to-time, something compels me to write. Perhaps you may enjoy the output of those brief moments of inspiration.
+<div class="lead lead-about">Write, write, write till you change the world.....
 </div>
 ---
 
@@ -20,6 +20,5 @@ permalink: /blog/
 </div>
 {% endfor %}
 </div>
-
 </div>
 
