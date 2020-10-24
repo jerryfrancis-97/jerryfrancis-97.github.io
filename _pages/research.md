@@ -9,15 +9,12 @@ permalink: /research/
 <div class="pretty-links">
   <div class="grid">
     <div class="unit golden-large">
-      <div class="lead lead-about">
-          <h3> <i class="fa fa-flask"></i> Research & Publications </h3>
-          I have worked on improving the scan time of IVIM MRI technique using Deep Learning and Image Processing as part of my final-year research project. The research paper is submitted to Multimedia Tools and Applications : Real time 2D/3D Image Processing with Deep Learning and is in "Under-Review" stage.    
-      </div>
+      <h3> <i class="fa fa-flask"></i> Research & Publications </h3>
+        <p>
+        I have worked on improving the scan time of IVIM MRI technique using Deep Learning and Image Processing as part of my final-year research project. The research paper is submitted to Multimedia Tools and Applications : Real time 2D/3D Image Processing with Deep Learning and is in "Under-Review" stage.    
+        </p>
     </div>
   </div>
-
-
-
 
 ### Courses
 
