@@ -8,6 +8,7 @@ permalink: /blog/
 <div class="pretty-links">
 
 <div class="lead lead-about">Write, write, write till you change the world.....
+Working on it!
 </div>
 ---
 
