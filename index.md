@@ -8,7 +8,7 @@ subtitle: Sub 42
 <div class="pretty-links">
 <div class="grid">
 <div class="unit golden-small profile-pic">
-<img class='site-profile' src="/assets/img/valentin_peretroukhin_cambridge.jpg">
+<!-- <img class='site-profile' src="/assets/img/valentin_peretroukhin_cambridge.jpg"> -->
 </div>
 <div class="unit golden-large">
 <div class="lead lead-about">
@@ -46,7 +46,7 @@ I love reading fiction novels about science, philosophy and a bit of history, fo
       <div class="unit half">
         <div class="project">
           <h4 class="project-title"><a href="https://github.com/jerryfrancis-97/Reinforcement_learning/blob/master/RL_taxi_task.ipynb"><i class="fa fa-github" aria-hidden="true"></i> Q-Learning in Solving Taxi environment </a></h4>
-          <img src='/assets/img/projects/taxi-task.gif' class='project-img'>
+          <!-- <img src='/assets/img/projects/taxi-task.gif' class='project-img' -->
           <p>A tabular version of Q-Learning along with Temporal Difference concept was used to make the taxi agent pickup a passenger from their source and drop them at their given destinations. Gym's taxi-task environment was used here.</p>
         </div>
       </div>
