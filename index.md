@@ -6,31 +6,38 @@ subtitle: Sub 42
 ---
 
 <div class="pretty-links">
-  <div class="grid">
-    <div class="unit golden-small profile-pic">
-      <!-- <img class='site-profile' src="/assets/img/1.jpg"> -->
-    </div>
-    <div class="unit golden-large">
-      <div class="lead lead-about">
-        Hi! I'm Jerome Francis, a recent graduate from TKM College of Engineering,Kollam. I'm interested in Deep Learning with a specific interest in Computer Vision and Reinforcement Learning. 
-      </div>
-    </div>
-  </div>
+<div class="grid">
+<div class="unit golden-small profile-pic">
+<img class='site-profile' src="/assets/img/valentin_peretroukhin_cambridge.jpg">
+</div>
+<div class="unit golden-large">
+<div class="lead lead-about">
+Hi! I'm Jerome Francis, a recent graduate from TKM College of Engineering,Kollam. I'm interested in Deep Learning with a specific interest in Computer Vision and Reinforcement Learning. 
 </div>
 
-
+I did my undergraduate from TKM College of Engineering, Kollam in Computer Science and Engineering with Honors.
+</div>
+</div>
+</div>
 
 <div class="grid news-about">
-  <div class="unit golden-large news">
-    <h3> <i class="fa fa-newspaper-o"></i> Recent news </h3>
-    I am currently studying RL papers and implementing projects based on different concepts of RL. 
-  </div>
+<div class="unit golden-large news">
 
-  <div class="unit golden-small about">
-        <h3> <i class="fa fa-id-card"></i> A bit more about me </h3>
-        I love reading fiction novels about science, philosophy and a bit of history, for example, the Dan Brown series, cycling early in the morning or in the evening -- which mostly depends on the mood or work, and playing online chess or solving some chess puzzles.  
-  </div>
+<h3> <i class="fa fa-newspaper-o"></i> Recent news </h3>
+
+What I'm doing now :
+* Studying RL papers and implementing projects based on different concepts of RL.
+* Reading "Surely you're Joking Mr.Feynman"
 </div>
+
+<div class="unit golden-small about">
+
+<h3> <i class="fa fa-id-card"></i> A bit more about me </h3>
+
+I love reading fiction novels about science, philosophy and a bit of history, for example, the Dan Brown series, cycling early in the morning or in the evening -- which mostly depends on the mood or work, and playing online chess or solving some chess puzzles.
+</div>
+</div>
+
 
 ## Projects
 {::nomarkdown} 
