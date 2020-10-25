@@ -2,7 +2,7 @@
 layout: page
 title: Jerome Francis
 head_title: Home
-subtitle: Sub 42 
+subtitle:  
 ---
 
 <div class="pretty-links">

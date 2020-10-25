@@ -6,8 +6,7 @@ permalink: /blog/
 ---
 
 <div class="pretty-links">
-##### Papers Explained ...
-<div class="lead lead-about"> My brief notes on the ideas presented in the papers below.
+<div class="lead lead-about"> Papers Explained : My brief notes on the ideas presented in the papers below.
 </div>
 ---
 
