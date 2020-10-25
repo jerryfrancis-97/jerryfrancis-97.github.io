@@ -3,7 +3,7 @@
 # Site settings
 title: Jerome Francis               # used for the html title of every page
 desc: >
-  My poerfolio website.
+  My portfolio website.
 
 url: https://jerryfrancis-97.github.io/     # put your website hosting url here
 baseurl: ''                 # the subpath of your site, e.g. /blog
@@ -33,7 +33,7 @@ navigation:
     desc: My research
   - title: Volunteering
     url: /teaching/
-    desc: Courses I've taught
+    desc: Volunteering
   - title: Writing
     url: /blog/
     desc: My writing

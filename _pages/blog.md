@@ -1,14 +1,13 @@
 ---
 layout: page
 title: EnRoute 42
-subtitle: The blog of Jerome Francis
+subtitle: My Blog
 permalink: /blog/
 ---
 
 <div class="pretty-links">
-
-<div class="lead lead-about">Write, write, write till you change the world.....
-Working on it!
+##### Papers Explained ...
+<div class="lead lead-about"> My brief notes on the ideas presented in the papers below.
 </div>
 ---
 
