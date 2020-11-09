@@ -12,7 +12,7 @@ subtitle:
 </div>
 <div class="unit golden-large">
 <div class="lead lead-about">
-Hi! I'm Jerome Francis, a recent graduate from TKM College of Engineering,Kollam. I'm interested in Deep Learning with a specific interest in Computer Vision and Reinforcement Learning. 
+Hi! I'm Jerome Francis, a recent graduate from TKM College of Engineering,Kollam, currently working in TCS. I'm interested in Deep Learning with a specific interest in Computer Vision and Reinforcement Learning. 
 </div>
 
 I did my undergraduate from TKM College of Engineering, Kollam in Computer Science and Engineering with Honors.
@@ -27,7 +27,8 @@ I did my undergraduate from TKM College of Engineering, Kollam in Computer Scien
 
 What I'm doing now :
 * Studying RL papers and implementing projects based on different concepts of RL.
-* Reading "Surely you're Joking Mr.Feynman"
+* Reading "Godel, Escher, Bach : An Eternal Golden Braid by Douglas Hofstadter"
+* Doing a project on Dynamic Music Visualisation: Interpreting Music with shapes and Colors
 </div>
 
 <div class="unit golden-small about">
