@@ -28,6 +28,7 @@ I did my undergraduate from TKM College of Engineering, Kollam in Computer Scien
 What I'm doing now :
 * Studying RL papers and implementing projects based on different concepts of RL.
 * Reading "Godel,Escher,Bach : An Eternal Golden Braid by Douglas Hofstadter"
+</div>
 
 <div class="unit golden-small about">
 
