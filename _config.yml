@@ -37,8 +37,8 @@ navigation:
   - title: Writing
     url: /blog/
     desc: My writing
-  - title: <i class='fa fa-file-text'></i>Resume
-    url: /assets/pdf/Resume_11_20.pdf
+  - title: Resume
+    url: /assets/pdf/resume.pdf
 
 # Used by Jekyll to recognize what is a post and what is a page
 defaults:
