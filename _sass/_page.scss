@@ -71,12 +71,21 @@
   margin: 2% 0;
 }
 
-.gif-img {
+.rail-img {
+  border: 0px solid #ccc;
+  border-radius: 6%;
+  width: 100%;
+  margin: -4% 12px;
+  box-shadow: 4px 4px 7px #000000;
+}
+
+.gif-img{
   border: 1px solid #ccc;
   border-radius: 2%;
-  width: 20%;
+  width: 55%;
   height: 50%;
   margin: 2% 0;
+  margin-left: 22%;
 }
 
 .news-item img {
