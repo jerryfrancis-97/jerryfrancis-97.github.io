@@ -6,7 +6,7 @@ permalink: /blog/
 ---
 
 <div class="pretty-links">
-<div class="lead lead-about"> Papers Explained : My brief notes on the ideas presented in the papers below.
+<div class="lead lead-about"> Papers Explained : My brief notes on the ideas presented in the papers. More such notes can be found <a href='https://github.com/jerryfrancis-97/spinning-up-papers'>here</a>.
 </div>
 ---
 
