@@ -1,23 +1,35 @@
 ---
 layout: page
 title: Research
-subtitle: Publication Status
+subtitle: 
 permalink: /research/
 ---
 
 <div class="pretty-links">
+### Collaborations
 
-<div class="lead lead-about">I have worked on improving the scan time of IVIM MRI technique using Deep Learning and Image Processing as part of my final-year research project. The research paper is submitted to Multimedia Tools and Applications : Real time 2D/3D Image Processing with Deep Learning and is in "Under-Review" stage.
+<div class="lead lead-about">Currently collaborating with Prof. Ansamma John and Prof. Jini Raju @ <b>Image Processing Research Lab</b> to incorporate deep learning ideas into the Medical Imaging field focussing on faster MRI signal acuqistion, b-value optimisations, etc., especially for the IVIM MRI technology.
 </div>
 
-
+I have taken the courses below to improve my independent research in RL, Medical Imaging + Deep Learning and other areas. 
 ### Courses
+  <div class="grid">
+  <div class="unit whole">
+#### RL Specialisation by University of Alberta and Amii    
+Learnt about the first principles of RL and its applications.<br>
+*Things I've Learnt ::*<br>
+Decision-making problem with Bandits, Markov Decision Processes<br>
+Exploitation-Exploration tradeoff and handling the balance with confidence bounds<br>
+Defining the RL problem and Design choices<br>
+Choosing the right algorithm and agent architecture<br>
+Constructing good experiments and analysing the parameter study<br>
+  </div>
+  </div>
 
   <div class="grid">
   <div class="unit whole">
-#### CS285 - Reinforcement Learning UC Berkley 
-*Ongoing*   
-Learning about the fundamental theoretical concepts of RL and its applications.<br>
+#### CS285 - Reinforcement Learning UC Berkley    
+Learnt about the fundamental theoretical concepts of Deep RL and its applications.<br>
 *Things I've Learnt ::*<br>
 Policy Gradient (on and off-policy using Importance Sampling)<br>
 Actor-Critic (Improved baseline version of policy gradient)<br>
@@ -25,6 +37,7 @@ Q-Learning (Evolving from Value Iteration, works best for tabular deterministic 
 PPO (Proximal Policy Optimisation) - based on TRPO
   </div>
   </div>
+
 
   <div class="grid">
   <div class="unit whole">
