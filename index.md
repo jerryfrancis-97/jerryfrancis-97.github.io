@@ -12,7 +12,7 @@ subtitle:
 </div>
 <div class="unit golden-large">
 <div class="lead lead-about">
-Hi! I'm Jerome Francis, currently working as a Data Analyst in TCS . I'm interested in Deep Learning with a specific focus on Reinforcement Learning and Computer Vision. 
+Hi! I'm Jerome Francis, currently doing my Masters from Mila and University of Montreal. Previously worked as Data Scientist @ TCS. I'm interested in Deep Learning with a specific focus on Reinforcement Learning and Decision Making. 
 </div>
 
 I did my undergraduate from TKM College of Engineering, Kollam in Computer Science and Engineering with Honors.
@@ -38,6 +38,11 @@ What I'm doing now :
 I love reading fiction novels about science, philosophy and a bit of history, for example, the Dan Brown series, cycling in the evening -- which mostly depends on the mood or work, and listening to film scores like <a href="https://www.youtube.com/watch?v=gEXZmoai-OI">"Aggressive Expansion"</a>, <a href="https://www.youtube.com/watch?v=wL6jh9thk8Q">"Iron Man 3 main theme"</a>, <a href="https://www.youtube.com/watch?v=3Xqqs5bCHpY">"Love & Work"</a>, and so on ...
 </div>
 </div>
+
+## Publications
+Abin Shoby, ***Jerome Francis***, Jini Raju, Ushadevi Amma C., Ansamma John. A Novel approach for
+b value optimization in IVIM imaging using an LSTM based deep learning network on simulated data,
+**International Journal of Medical Engineering and Informatics, 2023**
 
 
 ## Projects
