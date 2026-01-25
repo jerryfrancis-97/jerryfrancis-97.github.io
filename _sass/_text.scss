@@ -33,15 +33,22 @@ h6 { font-size: $fs-h6; }
 }
 
 .pretty-links {
-  a { @include make-link($link-color, $link-hover-color, $body-bg); 
+  a { 
+    color: var(--link-color);
+    text-decoration: none;
     line-height: 1.5;
+    
+    &:hover {
+      color: var(--link-hover-color);
+      text-decoration: underline;
+    }
   }
 }
 
 hr {
   margin: $spacer 0 $spacer1;
   border: 0;
-  border-top: 5px solid $brand-light-color;
+  border-top: 5px solid var(--border-color);
 }
 
 small,

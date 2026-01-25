@@ -11,5 +11,7 @@
 @import "grid";             // A small grid css (no flex)
 @import "text";             // The type related css
 
+@import "themes";           // Theme variables and dark mode
+@import "components";       // Reusable components (cards, buttons, etc.)
 @import "site";             // Styles specific to the site architecture
 @import "page";             // Styles specific to the pages

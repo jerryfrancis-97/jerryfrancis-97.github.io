@@ -1,0 +1,407 @@
+// Theme Toggle Button
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  transition: transform 0.2s ease;
+  
+  &:hover {
+    transform: scale(1.1);
+  }
+  
+  &:focus {
+    outline: 2px solid var(--link-color);
+    outline-offset: 2px;
+  }
+}
+
+.theme-icon-dark,
+.theme-icon-light {
+  display: inline-block;
+}
+
+[data-theme="dark"] .theme-icon-light {
+  display: none;
+}
+
+[data-theme="dark"] .theme-icon-dark {
+  display: inline-block;
+}
+
+[data-theme="light"] .theme-icon-light {
+  display: inline-block;
+}
+
+[data-theme="light"] .theme-icon-dark {
+  display: none;
+}
+
+// Search Toggle Button
+.search-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  transition: transform 0.2s ease;
+  
+  &:hover {
+    transform: scale(1.1);
+    color: var(--link-color);
+  }
+  
+  &:focus {
+    outline: 2px solid var(--link-color);
+    outline-offset: 2px;
+  }
+}
+
+// Search Overlay
+.search-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  backdrop-filter: blur(4px);
+  
+  &.active {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 10vh;
+  }
+}
+
+.search-modal {
+  background: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+  width: 90%;
+  max-width: 600px;
+  max-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.search-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.search-input {
+  flex: 1;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background: var(--bg-color);
+  color: var(--text-color);
+  
+  &:focus {
+    outline: 2px solid var(--link-color);
+    outline-offset: 0;
+  }
+}
+
+.search-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  
+  &:hover {
+    color: var(--link-color);
+  }
+}
+
+.search-results {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+.search-results-empty {
+  color: var(--text-muted);
+  text-align: center;
+  padding: 2rem;
+}
+
+.search-result-item {
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  
+  &:hover {
+    background-color: var(--nav-hover);
+  }
+  
+  .search-result-title {
+    font-weight: bold;
+    color: var(--link-color);
+    margin-bottom: 0.25rem;
+  }
+  
+  .search-result-excerpt {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+  }
+  
+  .search-result-type {
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    background: var(--nav-bg);
+    border-radius: 3px;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+  }
+}
+
+// Card Components (Mosaic-inspired)
+.card {
+  background: var(--card-bg);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: var(--card-shadow);
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+}
+
+// Homepage specific styles
+.home-page {
+  .profile-section {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  .profile-picture {
+    flex: 0 0 200px;
+    
+    img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: var(--card-shadow);
+    }
+  }
+  
+  .profile-info {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .contact-info {
+    margin-top: 1rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+  }
+  
+  .news-table,
+  .posts-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    
+    th, td {
+      padding: 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border-color);
+    }
+    
+    th {
+      font-weight: bold;
+      color: var(--text-color);
+      background: var(--nav-bg);
+    }
+    
+    tr:hover {
+      background-color: var(--table-stripe);
+    }
+  }
+  
+  .publications-list {
+    list-style: decimal;
+    padding-left: 2rem;
+    
+    li {
+      margin-bottom: 2rem;
+      padding-left: 0.5rem;
+    }
+    
+    .publication-title {
+      font-weight: bold;
+      color: var(--text-color);
+      margin-bottom: 0.5rem;
+    }
+    
+    .publication-authors {
+      font-style: italic;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+    
+    .publication-venue {
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+    
+    .publication-links {
+      margin-top: 0.5rem;
+      
+      a {
+        margin-right: 1rem;
+        color: var(--link-color);
+        text-decoration: none;
+        
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+// Blog page styles
+.posts {
+  .post {
+    margin-bottom: 2rem;
+  }
+  
+  .post-title-list {
+    margin-bottom: 0.5rem;
+    
+    a {
+      color: var(--link-color);
+      text-decoration: none;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  .post-date {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .post-excerpt {
+    color: var(--text-color);
+    margin-top: 0.5rem;
+  }
+  
+  .post-tags {
+    margin-top: 0.75rem;
+    
+    .tag {
+      display: inline-block;
+      padding: 0.2rem 0.5rem;
+      background: var(--nav-bg);
+      border-radius: 3px;
+      font-size: 0.8rem;
+      margin-right: 0.5rem;
+      color: var(--text-color);
+    }
+  }
+}
+
+// CV page styles
+.cv-content {
+  h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
+  }
+  
+  h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: var(--link-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 1rem;
+    transition: background-color 0.2s ease;
+    
+    &:hover {
+      background: var(--link-hover-color);
+    }
+  }
+}
+
+// Books page styles
+.books-content {
+  .books-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .book-item {
+    h4 {
+      margin-bottom: 0.5rem;
+      color: var(--text-color);
+    }
+    
+    .book-author {
+      color: var(--text-muted);
+      font-style: italic;
+      margin-bottom: 0.5rem;
+    }
+    
+    .book-status {
+      display: inline-block;
+      padding: 0.2rem 0.5rem;
+      background: var(--nav-bg);
+      border-radius: 3px;
+      font-size: 0.8rem;
+      color: var(--text-color);
+    }
+  }
+}
+
+// Mark styling for search highlights
+mark {
+  background-color: rgba(255, 255, 0, 0.3);
+  padding: 0.1rem 0.2rem;
+  border-radius: 2px;
+}
+
+[data-theme="dark"] mark {
+  background-color: rgba(255, 255, 0, 0.2);
+}

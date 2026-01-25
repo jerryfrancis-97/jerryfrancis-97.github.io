@@ -1,0 +1,15 @@
+- title: Home
+  url: /
+  desc: Home page
+
+- title: Blog
+  url: /blog/
+  desc: My blog posts
+
+- title: CV
+  url: /cv/
+  desc: My CV/Resume
+
+- title: Books
+  url: /books/
+  desc: Books I'm reading

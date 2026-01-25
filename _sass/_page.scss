@@ -19,7 +19,7 @@
   h3 {
     margin-top: $spacer1;
     margin-bottom: $spacer0;
-    color: $gray;
+    color: var(--text-muted);
   }
 }
 
@@ -44,7 +44,7 @@
     h3 {
       margin-top: $spacer2;
       margin-bottom: $spacer;
-      color: $gray;
+      color: var(--text-muted);
     }
   }
 }
@@ -111,7 +111,7 @@
   margin-top: $spacer2;
 
   .post-title {
-    color: $brand-color;
+    color: var(--link-color);
     margin-bottom: $spacer0;
   }
 
@@ -124,13 +124,13 @@
 .post-link:hover,
 .post-link:focus {
   text-decoration: none;
-  color: $body-color;
+  color: var(--text-color);
 }
 
 .post-date {
   display: block;
   font-family: $font-heading;
-  color: $text-muted;
+  color: var(--text-muted);
   margin: -$spacer0 0 $spacer;
   font-size: .875rem;
 }
@@ -148,7 +148,7 @@ p.post-desc {
   display: block;
   width: $spacer4;
   height: 5px;
-  background: $brand-light-color;
+  background: var(--border-color);
 }
 
 .post-link::after {
@@ -190,13 +190,14 @@ p.post-desc {
 
   a {
     font-weight: bold;
-    border-bottom: 5px solid $brand-light-color;
+    border-bottom: 5px solid var(--border-color);
     padding-bottom: $spacer0;
+    color: var(--link-color);
 
     &:hover,
     &:focus {
       text-decoration: none;
-      border-bottom-color: $brand-color;
+      border-bottom-color: var(--link-color);
     }
   }
 }
@@ -225,11 +226,11 @@ h2.page-subtitle a  {
   padding-left: 2em !important;
 }
 .lead-about {
-  color: $dark-blue;
+  color: var(--link-color);
 }
 
 .about {
-  background: $light-yellow;
+  background: var(--nav-bg);
   border-radius: 5px;
   padding: 0.25em 1em !important;
 

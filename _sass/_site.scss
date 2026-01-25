@@ -3,8 +3,8 @@
   margin-left: auto;
   padding: 0 $spacer $spacer $spacer;
   @include make-container();
-  background: #fff;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+  background: var(--bg-color);
+  box-shadow: var(--card-shadow);
   border-radius: 0.5em;
 }
 
@@ -39,28 +39,34 @@
   text-align: center;
 }
 
-.site-nav a {
-  flex: 0 1 auto;
-  padding: 0 .25rem;
-  transition: background 0.1s ease-out;
-  background-color: lighten($brand-light-color, 5%);
-  border-radius: 5px;
+.site-nav {
+  display: flex;
+  align-items: center;
   
-  &:hover {
-    text-decoration: none;
-    color: $link-color;
-    background-color: $brand-light-color;
-  }
+  a {
+    flex: 0 1 auto;
+    padding: 0 .25rem;
+    transition: background 0.1s ease-out;
+    background-color: var(--nav-bg);
+    border-radius: 5px;
+    color: var(--text-color);
+    
+    &:hover {
+      text-decoration: none;
+      color: var(--link-color);
+      background-color: var(--nav-hover);
+    }
 
-  &:focus,
-  &:active {
-    background-color: $link-color;
-    text-decoration: none;
-    color: #fff;
-  }
+    &:focus,
+    &:active {
+      background-color: var(--link-color);
+      text-decoration: none;
+      color: #fff;
+    }
 
-  &.current {
-    font-weight: bold;
+    &.current {
+      font-weight: bold;
+    }
   }
 }
 
@@ -123,7 +129,8 @@
   padding-top: $spacer1;
   padding-bottom: $spacer1;
   font-family: $font-heading;
-  border-top: 1px solid $brand-light-color;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-muted);
 }
 
 .site-footer {
@@ -150,7 +157,7 @@
 }
 
 .site-source a {
-  color: $gray;
+  color: var(--text-muted);
 }
 
 .site-links {
@@ -162,8 +169,17 @@
 
   &:not(:last-child)::after {
     content: '|';
-    color: $brand-light-color;
+    color: var(--border-color);
     margin: 0 .3rem 0 $spacer0;
+  }
+  
+  a {
+    color: var(--link-color);
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 

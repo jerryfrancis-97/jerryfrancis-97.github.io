@@ -24,9 +24,12 @@ google_analytics: 'UA-183805675-1'
 paginate: 5                           # number of posts to show per page
 paginate_path: "/articles/page:num/"  # link scheme for articles, should be letf as is
 
+# Logo (optional - if not set, will show site title)
+logo: jf.svg
+
 # Navigation settings
-# Used to define the navigation menu items
-# > Title is the tile of the navigation item, url the url and desc is the tooltip
+# Navigation is now defined in _data/navigation.yml
+# Legacy navigation (for backward compatibility)
 navigation:
   - title: Research 
     url: /research/
@@ -64,5 +67,4 @@ exclude:
   - vendor
 plugins:
   - jekyll-paginate
-  - jekyll-font-awesome-sass
 

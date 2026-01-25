@@ -26,8 +26,8 @@ body {
   font-family: $font-family;
   font-size: $fs;
   line-height: $lh;
-  color: $body-color;
-  background-color: $body-bg;
+  color: var(--text-color);
+  background-color: var(--bg-color);
   margin: 0;
 }
 
