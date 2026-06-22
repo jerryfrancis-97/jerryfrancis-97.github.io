@@ -281,3 +281,71 @@ div.profile-pic p {
 .paper_links h2 {
   margin: 0.25em 0 0.5em 0;
 }
+
+// PAGE HOME (editorial) ====================================
+
+.page--home {
+  .page-header {
+    margin-bottom: $spacer2;
+  }
+
+  .page-title {
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+
+  .page-content > .home {
+    > p {
+      margin-bottom: 1.35rem;
+      line-height: 1.75;
+    }
+
+    > p:first-of-type {
+      font-size: 1.125rem;
+      color: var(--theme-body-color);
+    }
+
+    h2 {
+      margin-top: 2.75rem;
+      margin-bottom: 0.85rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--theme-muted);
+    }
+
+    h3 {
+      margin-top: 1.75rem;
+      margin-bottom: 0.4rem;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--theme-body-color);
+    }
+
+    ul {
+      margin-top: 0.25rem;
+      margin-bottom: 0;
+      padding-left: 1.2rem;
+
+      li {
+        margin-bottom: 0.45rem;
+        line-height: 1.65;
+      }
+    }
+
+    h2 + p,
+    h2 + ul {
+      margin-top: 0;
+    }
+
+    h2 + p strong a {
+      font-weight: 700;
+    }
+
+    p em,
+    p i {
+      font-style: italic;
+    }
+  }
+}
