@@ -132,7 +132,7 @@
   display: block;
   font-family: $font-heading;
   color: var(--theme-muted);
-  margin: -$spacer0 0 $spacer;
+  margin: -$spacer0 0 $spacer1;
   font-size: .875rem;
 }
 
@@ -147,9 +147,9 @@ p.post-desc {
 .post-link::after {
   content: '';
   display: block;
-  width: $spacer4;
-  height: 5px;
-  background: var(--theme-brand-light);
+  width: $spacer3;
+  height: 2px;
+  background: var(--theme-border-subtle);
 }
 
 .post-link::after {
