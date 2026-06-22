@@ -1,19 +1,20 @@
 // PAGE COMMON ====================================
 .page-header,
 .post-header {
-  margin-bottom: $spacer;
+  margin-bottom: $spacer1;
 }
 
 .post-content,
 .page-content {
+  line-height: 1.75;
 
   p, ul, ol { margin-bottom: 1.3rem; }
 
   p+ul { margin-top: -$spacer0; }
 
   h2 {
-    margin-top: $spacer;
-    margin-bottom: $spacer;
+    margin-top: $spacer2;
+    margin-bottom: $spacer0;
   }
 
   h3 {
@@ -32,17 +33,17 @@
   .post-content,
   .page-content {
     font-size: $fs-md;
-    line-height: $lh-md;
+    line-height: 1.8;
 
     p, ul, ol { margin-bottom: $spacer1; }
 
     h2 {
-      margin-top: $spacer4;
-      margin-bottom: $spacer1;
+      margin-top: $spacer3;
+      margin-bottom: $spacer0;
     }
 
     h3 {
-      margin-top: $spacer2;
+      margin-top: $spacer1;
       margin-bottom: $spacer;
       color: var(--theme-heading-muted);
     }
@@ -131,7 +132,7 @@
   display: block;
   font-family: $font-heading;
   color: var(--theme-muted);
-  margin: -$spacer0 0 $spacer;
+  margin: -$spacer0 0 $spacer1;
   font-size: .875rem;
 }
 
@@ -146,9 +147,9 @@ p.post-desc {
 .post-link::after {
   content: '';
   display: block;
-  width: $spacer4;
-  height: 5px;
-  background: var(--theme-brand-light);
+  width: $spacer3;
+  height: 2px;
+  background: var(--theme-border-subtle);
 }
 
 .post-link::after {
@@ -163,6 +164,7 @@ p.post-desc {
 .post-link:hover::after {
   -webkit-transform: scaleX(3);
   transform: scaleX(3);
+  background: var(--theme-link);
 }
 
 .writings-list {
@@ -199,8 +201,20 @@ p.post-desc {
   font-size: .925rem;
 }
 
+.post .post-content,
+.page .page-content {
+  max-width: 44rem;
+}
+
+.page-header,
+.post-header {
+  max-width: 44rem;
+}
+
 .post .post-content {
   max-width: 44rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 // PAGE Research ====================================
 

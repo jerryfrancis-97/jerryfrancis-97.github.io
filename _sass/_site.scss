@@ -3,9 +3,8 @@
   margin-left: auto;
   padding: 0 $spacer $spacer $spacer;
   @include make-container();
-  background: var(--theme-surface);
-  box-shadow: var(--theme-surface-shadow);
-  border-radius: 0.5em;
+  background: transparent;
+  box-shadow: none;
 }
 
 // RESPONSIVE SITE
@@ -43,16 +42,18 @@
 
 .site-nav a {
   flex: 0 1 auto;
-  padding: 0 .25rem;
+  padding: .2rem .55rem;
   transition: background 0.1s ease-out, color 0.1s ease-out;
-  background-color: var(--theme-nav-bg);
-  border-radius: 5px;
+  background-color: transparent;
+  border-radius: 999px;
   color: var(--theme-body-color);
+  border: 1px solid transparent;
   
   &:hover {
     text-decoration: none;
     color: var(--theme-link);
-    background-color: var(--theme-nav-bg-hover);
+    background-color: transparent;
+    border-color: var(--theme-border-subtle);
   }
 
   &:focus,
@@ -103,7 +104,7 @@
 
     a {
       margin-right:$spacer1;
-      padding: .25rem $spacer0;
+      padding: .35rem .8rem;
     }
 
   }
@@ -126,7 +127,7 @@
   padding-top: $spacer1;
   padding-bottom: $spacer1;
   font-family: $font-heading;
-  border-top: 1px solid var(--theme-border);
+  border-top: 1px solid var(--theme-border-subtle);
 }
 
 .site-footer {

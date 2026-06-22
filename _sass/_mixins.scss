@@ -86,33 +86,24 @@
 
 @mixin make-link ($color, $color-hover, $color-bg) {
   color: var(--theme-link);
-  text-shadow: 0.04545em 0 0 var(--theme-body-bg),
-  0.09091em 0 0 var(--theme-body-bg),
-  0.13636em 0 0 var(--theme-body-bg),
-  -0.04545em 0 0 var(--theme-body-bg),
-  -0.09091em 0 0 var(--theme-body-bg),
-  -0.13636em 0 0 var(--theme-body-bg),
-  0 0.04545em 0 var(--theme-body-bg),
-  0 0.09091em 0 var(--theme-body-bg),
-  0 -0.04545em 0 var(--theme-body-bg),
-  0 -0.09091em 0 var(--theme-body-bg);
-  background-image: linear-gradient(var(--theme-link), var(--theme-link));
-  background-position: 0 1.10em;
-  background-size: 1px 1px;
-  background-repeat: repeat-x;
   text-decoration: none;
+  background-image: linear-gradient(to right, transparent, transparent), linear-gradient(var(--theme-link), var(--theme-link));
+  background-position: 0 100%, 0 100%;
+  background-repeat: no-repeat, repeat-x;
+  background-size: 100% 1px, 100% 1px;
+  padding-bottom: 0.04em;
+  transition: color 0.15s ease, background-image 0.15s ease, opacity 0.15s ease;
 
   &:hover,
   &:active {
     color: var(--theme-link-hover);
     text-decoration: none;
-    background-image: linear-gradient(var(--theme-link-hover), var(--theme-link-hover));
+    background-image: linear-gradient(to right, transparent, transparent), linear-gradient(var(--theme-link-hover), var(--theme-link-hover));
   }
 
   &:focus {
     outline: 0;
     transition: none;
-    text-shadow: none;
     background: var(--theme-link);
     color: var(--theme-body-bg);
     text-decoration: none;
