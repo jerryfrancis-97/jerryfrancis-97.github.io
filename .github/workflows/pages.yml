@@ -43,7 +43,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     environment:
-      name: ${{ github.ref_name == 'main' && 'github-pages' || format('github-pages-{0}', replace(github.ref_name, '/', '-')) }}
+      name: ${{ github.ref_name == 'main' && 'github-pages' || 'github-pages-preview' }}
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages
