@@ -5,9 +5,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: $spacer0;
   font-family: $font-heading;
-  line-height: 1.18;
+  font-weight: 500;
+  line-height: 1.08;
   color: inherit;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
 }
 
 h1 { font-size: $fs-h1; }
@@ -28,8 +29,8 @@ h6 { font-size: $fs-h6; }
 
 // TEXT - UTILS ------------------
 .lead {
-  font-size: 1.25rem;
-  line-height: 1.72;
+  font-size: 1.3rem;
+  line-height: 1.7;
   p { margin-bottom: 1.5rem; }
 }
 
@@ -48,8 +49,11 @@ hr {
 
 small,
 .small {
-  font-size: 80%;
+  font-size: 0.78rem;
   font-weight: normal;
+  font-family: $font-heading;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 @include mq-up(md) {
