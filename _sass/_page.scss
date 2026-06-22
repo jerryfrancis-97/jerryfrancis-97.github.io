@@ -164,6 +164,44 @@ p.post-desc {
   -webkit-transform: scaleX(3);
   transform: scaleX(3);
 }
+
+.writings-list {
+  margin-top: $spacer2;
+}
+
+.writings-item {
+  padding: $spacer 0;
+  border-bottom: 1px solid var(--theme-border-subtle);
+}
+
+.writings-item:first-child {
+  padding-top: 0;
+}
+
+.writings-title {
+  margin-bottom: $spacer0;
+}
+
+.writings-date {
+  display: block;
+  margin-bottom: $spacer0;
+  font-family: $font-heading;
+  font-size: .875rem;
+  color: var(--theme-muted);
+}
+
+.writings-excerpt {
+  margin-bottom: $spacer0;
+}
+
+.writings-link {
+  font-family: $font-heading;
+  font-size: .925rem;
+}
+
+.post .post-content {
+  max-width: 44rem;
+}
 // PAGE Research ====================================
 
 .pub_img img {
