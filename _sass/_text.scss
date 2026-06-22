@@ -42,8 +42,7 @@ h6 { font-size: $fs-h6; }
 hr {
   margin: $spacer1 0;
   border: 0;
-  border-top: 1px solid var(--theme-border-subtle);
-  opacity: 1;
+  border-top: 5px solid var(--theme-brand-light);
 }
 
 small,
