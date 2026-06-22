@@ -19,7 +19,7 @@
   h3 {
     margin-top: $spacer1;
     margin-bottom: $spacer0;
-    color: $gray;
+    color: var(--theme-heading-muted);
   }
 }
 
@@ -44,7 +44,7 @@
     h3 {
       margin-top: $spacer2;
       margin-bottom: $spacer;
-      color: $gray;
+      color: var(--theme-heading-muted);
     }
   }
 }
@@ -65,7 +65,7 @@
 }
 
 .project-img {
-  border: 1px solid #ccc;
+  border: 1px solid var(--theme-border-subtle);
   border-radius: 2%;
   width: 95%;
   margin: 2% 0;
@@ -80,7 +80,7 @@
 }
 
 .minerl-gif-img{
-  border: 1px solid #ccc;
+  border: 1px solid var(--theme-border-subtle);
   border-radius: 2%;
   width: 100%;
   height: 50%;
@@ -88,7 +88,7 @@
 }
 
 .gif-img{
-  border: 1px solid #ccc;
+  border: 1px solid var(--theme-border-subtle);
   border-radius: 2%;
   width: 55%;
   height: 50%;
@@ -98,7 +98,7 @@
 
 .news-item img {
   border-radius: 2%;
-  border: 1px solid #ccc;
+  border: 1px solid var(--theme-border-subtle);
   width: 95%;
   margin: 2% 0;
 }
@@ -111,7 +111,7 @@
   margin-top: $spacer2;
 
   .post-title {
-    color: $brand-color;
+    color: var(--theme-link);
     margin-bottom: $spacer0;
   }
 
@@ -124,13 +124,13 @@
 .post-link:hover,
 .post-link:focus {
   text-decoration: none;
-  color: $body-color;
+  color: var(--theme-body-color);
 }
 
 .post-date {
   display: block;
   font-family: $font-heading;
-  color: $text-muted;
+  color: var(--theme-muted);
   margin: -$spacer0 0 $spacer;
   font-size: .875rem;
 }
@@ -148,7 +148,7 @@ p.post-desc {
   display: block;
   width: $spacer4;
   height: 5px;
-  background: $brand-light-color;
+  background: var(--theme-brand-light);
 }
 
 .post-link::after {
@@ -169,13 +169,13 @@ p.post-desc {
 .pub_img img {
   margin: 0rem 1rem 0 0;
   padding: 2px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--theme-border-subtle);
 }
 
 .teaching_img img {
   margin: 0rem 1rem 0 0;
   padding: 2px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--theme-border-subtle);
 }
 
 // PAGE WORK & PROJECTS ====================================
@@ -190,13 +190,13 @@ p.post-desc {
 
   a {
     font-weight: bold;
-    border-bottom: 5px solid $brand-light-color;
+    border-bottom: 5px solid var(--theme-brand-light);
     padding-bottom: $spacer0;
 
     &:hover,
     &:focus {
       text-decoration: none;
-      border-bottom-color: $brand-color;
+      border-bottom-color: var(--theme-brand);
     }
   }
 }
@@ -215,7 +215,7 @@ p.post-desc {
 
 h2.page-subtitle {
   font-weight: 100;
-  color: #999;
+  color: var(--theme-footer-muted);
 }
 h2.page-subtitle a  {
   font-size:75%;
@@ -225,11 +225,11 @@ h2.page-subtitle a  {
   padding-left: 2em !important;
 }
 .lead-about {
-  color: $dark-blue;
+  color: var(--theme-brand-dark);
 }
 
 .about {
-  background: $light-yellow;
+  background: var(--theme-accent-bg);
   border-radius: 5px;
   padding: 0.25em 1em !important;
 
@@ -270,7 +270,7 @@ div.profile-pic p {
 }
 .paper_info .paper_authors {
   font-size: 125%;
-  color: $dark-blue;
+  color: var(--theme-brand-dark);
   display:block;
 }
 .paper_info .paper_venue {

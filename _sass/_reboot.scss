@@ -26,8 +26,8 @@ body {
   font-family: $font-family;
   font-size: $fs;
   line-height: $lh;
-  color: $body-color;
-  background-color: $body-bg;
+  color: var(--theme-body-color);
+  background-color: var(--theme-body-bg);
   margin: 0;
 }
 
@@ -85,7 +85,7 @@ blockquote {
 }
 
 a {
-  color: $link-color;
+  color: var(--theme-link);
   text-decoration: $link-decoration;
   background-color: transparent;
 
@@ -96,7 +96,7 @@ a {
 
   &:hover,
   &:focus {
-    color: $link-hover-color;
+    color: var(--theme-link-hover);
     text-decoration: $link-hover-decoration;
   }
 

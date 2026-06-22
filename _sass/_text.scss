@@ -41,7 +41,7 @@ h6 { font-size: $fs-h6; }
 hr {
   margin: $spacer 0 $spacer1;
   border: 0;
-  border-top: 5px solid $brand-light-color;
+  border-top: 5px solid var(--theme-brand-light);
 }
 
 small,
@@ -58,7 +58,7 @@ small,
 mark,
 .mark {
   padding: .2em;
-  background-color: $light-yellow;
+  background-color: var(--theme-mark-bg);
 }
 
 code, kbd,
@@ -70,7 +70,7 @@ code {
   padding: .2rem .4rem;
   font-size: 90%;
   color: $red;
-  background-color: $gray-lightest;
+  background-color: var(--theme-code-bg);
   border-radius: $border-radius;
 }
 
@@ -79,7 +79,7 @@ pre {
   margin-top: 0;
   margin-bottom: 1rem;
   font-size: 90%;
-  color: $gray-dark;
+  color: var(--theme-body-color);
 
   code {
     padding: 0;

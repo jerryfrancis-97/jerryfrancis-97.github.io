@@ -18,6 +18,17 @@
 
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Lora:400,400i,700" rel="stylesheet">
 
+  <script>
+    (function () {
+      var STORAGE_KEY = 'theme';
+      var stored = localStorage.getItem(STORAGE_KEY);
+      var theme = (stored === 'light' || stored === 'dark')
+        ? stored
+        : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+
   <!-- Favicons -->
   <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/img/apple-icon-180x180.png">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/assets/img/favicon-32x32.png">
