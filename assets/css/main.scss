@@ -5,6 +5,7 @@
 
 @import "variables";        // Your Sass variables should go there
 @import "mixins";           // Your additional mixins should go there
+@import "theme";            // Light/dark theme tokens and toggle
 
 @import "reboot";           // Opinionated reboot/normalize/reset css
 

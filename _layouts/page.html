@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<article class="page">
+<article class="page{% if page.page_class %} page--{{ page.page_class }}{% endif %}">
 
   {% if page.title %}
   <header class="page-header">

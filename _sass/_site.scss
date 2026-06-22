@@ -3,9 +3,8 @@
   margin-left: auto;
   padding: 0 $spacer $spacer $spacer;
   @include make-container();
-  background: #fff;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
-  border-radius: 0.5em;
+  background: transparent;
+  box-shadow: none;
 }
 
 // RESPONSIVE SITE
@@ -30,6 +29,8 @@
 
 .site-nav {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: right;
   font-family: "Lato", serif;
   font-size: 1.1rem;
@@ -41,22 +42,25 @@
 
 .site-nav a {
   flex: 0 1 auto;
-  padding: 0 .25rem;
-  transition: background 0.1s ease-out;
-  background-color: lighten($brand-light-color, 5%);
-  border-radius: 5px;
+  padding: .2rem .55rem;
+  transition: background 0.1s ease-out, color 0.1s ease-out;
+  background-color: transparent;
+  border-radius: 999px;
+  color: var(--theme-body-color);
+  border: 1px solid transparent;
   
   &:hover {
     text-decoration: none;
-    color: $link-color;
-    background-color: $brand-light-color;
+    color: var(--theme-link);
+    background-color: transparent;
+    border-color: var(--theme-border-subtle);
   }
 
   &:focus,
   &:active {
-    background-color: $link-color;
+    background-color: var(--theme-brand);
     text-decoration: none;
-    color: #fff;
+    color: var(--theme-nav-active-color);
   }
 
   &.current {
@@ -100,7 +104,7 @@
 
     a {
       margin-right:$spacer1;
-      padding: .25rem $spacer0;
+      padding: .35rem .8rem;
     }
 
   }
@@ -123,14 +127,14 @@
   padding-top: $spacer1;
   padding-bottom: $spacer1;
   font-family: $font-heading;
-  border-top: 1px solid $brand-light-color;
+  border-top: 1px solid var(--theme-border-subtle);
 }
 
 .site-footer {
   ul, li {
     margin-bottom: 0;
     margin-top: 0;
-    color: #999;
+    color: var(--theme-footer-muted);
     font-weight: 100;
   }
 
@@ -150,7 +154,7 @@
 }
 
 .site-source a {
-  color: $gray;
+  color: var(--theme-muted);
 }
 
 .site-links {
@@ -162,7 +166,7 @@
 
   &:not(:last-child)::after {
     content: '|';
-    color: $brand-light-color;
+    color: var(--theme-border);
     margin: 0 .3rem 0 $spacer0;
   }
 }
@@ -184,14 +188,14 @@
 // SITE SELECTION ====================================
 
 ::-moz-selection {
-  background-color: $brand-color;
-  color: #fff;
+  background-color: var(--theme-selection-bg);
+  color: var(--theme-selection-color);
   text-shadow: none;
 }
 
 ::selection {
-  background-color: $brand-color;
-  color: #fff;
+  background-color: var(--theme-selection-bg);
+  color: var(--theme-selection-color);
   text-shadow: none;
 }
 

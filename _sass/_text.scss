@@ -5,8 +5,9 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: $spacer0;
   font-family: $font-heading;
-  line-height: $lh-sm;
+  line-height: 1.18;
   color: inherit;
+  letter-spacing: -0.01em;
 }
 
 h1 { font-size: $fs-h1; }
@@ -28,7 +29,7 @@ h6 { font-size: $fs-h6; }
 // TEXT - UTILS ------------------
 .lead {
   font-size: 1.25rem;
-  line-height: 1.6;
+  line-height: 1.72;
   p { margin-bottom: 1.5rem; }
 }
 
@@ -39,9 +40,10 @@ h6 { font-size: $fs-h6; }
 }
 
 hr {
-  margin: $spacer 0 $spacer1;
+  margin: $spacer1 0;
   border: 0;
-  border-top: 5px solid $brand-light-color;
+  border-top: 1px solid var(--theme-border-subtle);
+  opacity: 1;
 }
 
 small,
@@ -58,7 +60,7 @@ small,
 mark,
 .mark {
   padding: .2em;
-  background-color: $light-yellow;
+  background-color: var(--theme-mark-bg);
 }
 
 code, kbd,
@@ -70,7 +72,7 @@ code {
   padding: .2rem .4rem;
   font-size: 90%;
   color: $red;
-  background-color: $gray-lightest;
+  background-color: var(--theme-code-bg);
   border-radius: $border-radius;
 }
 
@@ -79,7 +81,7 @@ pre {
   margin-top: 0;
   margin-bottom: 1rem;
   font-size: 90%;
-  color: $gray-dark;
+  color: var(--theme-body-color);
 
   code {
     padding: 0;
@@ -91,17 +93,18 @@ pre {
 }
 
 blockquote {
-  margin: $spacer 0 $spacer $spacer;
-  font-size: .85em;
-  line-height: 1.6;
+  margin: $spacer1 0 $spacer1 $spacer;
+  padding-left: $spacer;
+  border-left: 2px solid var(--theme-border-subtle);
+  font-size: .95em;
+  line-height: 1.7;
+  color: var(--theme-muted);
 }
 
 
 @include mq-up(md) {
   blockquote {
     margin: $spacer2 0 $spacer2 $spacer2;
-    font-size: .85em;
-    line-height: 1.8;
   }
 }
 
