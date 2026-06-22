@@ -5,26 +5,26 @@ html[data-theme="light"],
 html:not([data-theme]) {
   color-scheme: light;
 
-  --theme-body-bg: #e4f3ec;
-  --theme-body-color: #1a2e28;
-  --theme-surface: #f4fbf7;
-  --theme-surface-shadow: 0 4px 8px 0 rgba(16, 80, 60, 0.06), 0 6px 20px 0 rgba(16, 80, 60, 0.08);
-  --theme-brand: #059669;
-  --theme-brand-light: #a7f3d0;
-  --theme-brand-dark: #065f46;
-  --theme-link: #047857;
-  --theme-link-hover: #065f46;
-  --theme-muted: #5f7a72;
-  --theme-border: #b8dcc8;
-  --theme-border-subtle: #c5ddd0;
-  --theme-nav-bg: #d9f0e4;
-  --theme-nav-bg-hover: #c2e8d3;
+  --theme-body-bg: #f4efe7;
+  --theme-body-color: #211d18;
+  --theme-surface: #fbf7f0;
+  --theme-surface-shadow: none;
+  --theme-brand: #b35f2a;
+  --theme-brand-light: #e2b48a;
+  --theme-brand-dark: #7b3c17;
+  --theme-link: #8e4d22;
+  --theme-link-hover: #6f3815;
+  --theme-muted: #6f655a;
+  --theme-border: #d5cabd;
+  --theme-border-subtle: #e2d8cb;
+  --theme-nav-bg: transparent;
+  --theme-nav-bg-hover: rgba(143, 77, 34, 0.08);
   --theme-nav-active-color: #ffffff;
-  --theme-accent-bg: #ecfdf5;
-  --theme-code-bg: #eef8f2;
-  --theme-mark-bg: #d1fae5;
-  --theme-heading-muted: #4a635c;
-  --theme-footer-muted: #6b8a80;
+  --theme-accent-bg: #f8f1e7;
+  --theme-code-bg: #f3ede3;
+  --theme-mark-bg: #efe0cf;
+  --theme-heading-muted: #5b5247;
+  --theme-footer-muted: #766b5f;
   --theme-selection-bg: #059669;
   --theme-selection-color: #ffffff;
 }
@@ -32,33 +32,33 @@ html:not([data-theme]) {
 html[data-theme="dark"] {
   color-scheme: dark;
 
-  --theme-body-bg: #070b14;
-  --theme-body-color: #dce4f0;
-  --theme-surface: #0f1628;
-  --theme-surface-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.35), 0 8px 24px 0 rgba(0, 0, 0, 0.45);
-  --theme-brand: #2dd4bf;
-  --theme-brand-light: #1e3a5f;
-  --theme-brand-dark: #5eead4;
-  --theme-link: #5eead4;
-  --theme-link-hover: #99f6e4;
-  --theme-muted: #8899b3;
-  --theme-border: #1e2d4a;
-  --theme-border-subtle: #243552;
-  --theme-nav-bg: #152238;
-  --theme-nav-bg-hover: #1c2d4a;
-  --theme-nav-active-color: #070b14;
-  --theme-accent-bg: #121e33;
-  --theme-code-bg: #0c1424;
-  --theme-mark-bg: #1a2740;
-  --theme-heading-muted: #94a3b8;
-  --theme-footer-muted: #64748b;
-  --theme-selection-bg: #0d9488;
-  --theme-selection-color: #070b14;
+  --theme-body-bg: #10151f;
+  --theme-body-color: #ece6dc;
+  --theme-surface: #161c28;
+  --theme-surface-shadow: none;
+  --theme-brand: #d89c6a;
+  --theme-brand-light: #3b4a61;
+  --theme-brand-dark: #f0c19a;
+  --theme-link: #f0c19a;
+  --theme-link-hover: #f6d7bd;
+  --theme-muted: #a6a08f;
+  --theme-border: #2a3240;
+  --theme-border-subtle: #364154;
+  --theme-nav-bg: transparent;
+  --theme-nav-bg-hover: rgba(240, 193, 154, 0.08);
+  --theme-nav-active-color: #10151f;
+  --theme-accent-bg: #1a2230;
+  --theme-code-bg: #131926;
+  --theme-mark-bg: #233043;
+  --theme-heading-muted: #b7afa0;
+  --theme-footer-muted: #918b7b;
+  --theme-selection-bg: #d89c6a;
+  --theme-selection-color: #10151f;
 }
 
 body,
 .site {
-  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
 // THEME TOGGLE ====================================
@@ -68,10 +68,9 @@ body,
   align-items: stretch;
   flex-shrink: 0;
   margin-left: $spacer0;
-  padding: 2px;
-  border-radius: 5px;
-  background-color: var(--theme-nav-bg);
-  border: 1px solid var(--theme-border);
+  padding-left: $spacer0;
+  border-left: 1px solid var(--theme-border-subtle);
+  background-color: transparent;
 }
 
 .theme-toggle__btn {
@@ -79,16 +78,18 @@ body,
   background: transparent;
   color: var(--theme-muted);
   font-family: $font-heading;
-  font-size: 0.85rem;
+  font-size: 0.72rem;
   line-height: 1.4;
-  padding: .25rem .55rem;
-  border-radius: 4px;
+  padding: .15rem .35rem;
+  border-radius: 0;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   cursor: pointer;
   transition: background 0.1s ease-out, color 0.1s ease-out;
 
   &:hover {
-    color: var(--theme-link);
-    background-color: var(--theme-nav-bg-hover);
+    color: var(--theme-body-color);
+    background-color: transparent;
   }
 
   &:focus {
@@ -96,18 +97,20 @@ body,
   }
 
   &.is-active {
-    background-color: var(--theme-brand);
-    color: var(--theme-nav-active-color);
-    font-weight: bold;
+    background-color: transparent;
+    color: var(--theme-body-color);
+    font-weight: 600;
   }
 }
 
 @include mq-up(xs) {
   .theme-toggle {
     width: 100%;
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: $spacer0;
     margin-left: 0;
+    padding-left: 0;
+    border-left: 0;
   }
 }
 
