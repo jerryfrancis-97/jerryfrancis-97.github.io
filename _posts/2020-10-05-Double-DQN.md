@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Double DQNs
-summary: Double DQN reduces overestimation by separating action selection from action evaluation.
+date: 2020-10-05
+description: Double DQN reduces overestimation by separating action selection from action evaluation using the target network.
+tags: [reinforcement-learning]
 ---
 
 - - **Over-estimation of q-values :** Main problem of vanilla DQNs. Over-estimation is **not** a problem if it is uniformly distributed, as then, the relative action preferences will preserve, and doesn't affect the policy much. Thrun and Schwartz (1993), who showed that if the action values contain random errors uniformly distributed in an interval [-e,e ] then each target is overestimated up to 'gamma * e * (m-1)/(m+1)' where m is the number of actions.

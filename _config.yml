@@ -1,68 +1,24 @@
-# The main config file for your Jekyll template
-
-# Site settings
-title: Jerome Francis               # used for the html title of every page
-desc: >
-  My portfolio website.
-
-url: https://jerryfrancis-97.github.io/     # put your website hosting url here
-baseurl: ''                 # the subpath of your site, e.g. /blog
-permalink: /:year/:title/   # how should we display posts url
-
-# Meta settings
+title: Jerome Francis
 email: francis.jerome999@gmail.com
 author: Jerome Francis
-#twitter_username: valentinp
-github: [metadata]
 github_username: jerryfrancis-97
-github_source: jackal
+url: "https://jerryfrancis-97.github.io"
+baseurl: ""
+permalink: /:year/:title/
+google_analytics: UA-183805675-1
 
-# Put your ga tracking code below
-google_analytics: 'UA-183805675-1'
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
 
-# Pagination settings
-paginate: 5                           # number of posts to show per page
-paginate_path: "/articles/page:num/"  # link scheme for articles, should be letf as is
-
-# Navigation settings
-# Used to define the navigation menu items
-# > Title is the tile of the navigation item, url the url and desc is the tooltip
-navigation:
-  - title: Research 
-    url: /research/
-    desc: My research
-  - title: Volunteering
-    url: /teaching/
-    desc: Volunteering
-  - title: Writing
-    url: /blog/
-    desc: My writing
-  - title: Resume
-    url: /assets/pdf/resume.pdf
-
-# Used by Jekyll to recognize what is a post and what is a page
-defaults:
-  -
-    scope:
-      path: ''
-      type: posts
-    values:
-      layout: post
-
-# Markdown parser settings
+include: [_pages]
 markdown: kramdown
 kramdown:
   input: GFM
-  hard_wrap: false          # you can change this if you feel like it
-  parse_block_html: true    # allow parsing html inside markdown
+  parse_block_html: true
 
-# Build settings
-include:
-  - _pages                  # all your pages can be put inside pages (except articles)
 exclude:
-  - README.md
-  - vendor
-plugins:
-  - jekyll-paginate
-  - jekyll-font-awesome-sass
-
+  - vendor/
+  - Gemfile.lock
+  - "*.psd"
+  - "*.zip"

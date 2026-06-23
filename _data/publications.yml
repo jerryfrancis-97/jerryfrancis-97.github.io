@@ -1,0 +1,23 @@
+- title: "Interpreting Latent CoT Reasoning as Dynamical Systems"
+  authors: "Shreya Sanjay Boyane, Sabari Iyyappan Duraipandian, Manju Nagesh, **Jerome Francis**, Archana Vaidheeswaran, Kevin Zhu"
+  venue: "ICML 2026 FoGen Workshop"
+  year: 2026
+  type: workshop
+  links:
+    pdf: "https://openreview.net/pdf?id=ZAGsOMAwBV"
+
+- title: "PerplexMATH: Steering LLMs Toward Mathematical Reasoning"
+  authors: "**Jerome Francis**, Kamesh R, Serena Pei"
+  venue: "ICML 2025 NewInML Workshop"
+  year: 2025
+  type: workshop
+  links:
+    pdf: "https://openreview.net/pdf?id=2N1lM7lB78"
+
+- title: "A Novel approach for b value optimization in IVIM imaging using an LSTM based deep learning network on simulated data"
+  authors: "Abin Shoby, **Jerome Francis**, Jini Raju, Ushadevi Amma C., Ansamma John"
+  venue: "International Journal of Medical Engineering and Informatics"
+  year: 2023
+  type: journal
+  links:
+    journal: "https://www.inderscienceonline.com/doi/abs/10.1504/IJMEI.2026.154136"

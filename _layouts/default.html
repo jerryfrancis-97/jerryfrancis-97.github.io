@@ -1,23 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  {% include head.html %}
-
-  <body>
-
-    <div class="site">
-
-      {% include header.html %}
-
-      <div class="site-content">
-        {{ content }}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title and page.title != site.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/graphics/favicon_io/apple-touch-icon.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/graphics/favicon_io/favicon-32x32.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/graphics/favicon_io/favicon-16x16.png' | relative_url }}">
+  <link rel="manifest" href="{{ '/graphics/favicon_io/site.webmanifest' | relative_url }}">
+  <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
+  {% seo %}
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)'], ['$', '$']],
+        displayMath: [['\\[', '\\]'], ['$$', '$$']]
+      },
+      options: { skipHtmlTags: ['script','noscript','style','textarea','pre'] }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+</head>
+<body>
+  <nav class="site-nav">
+    <a class="nav-name" href="{{ '/' | relative_url }}">Jerome Francis</a>
+    <div class="nav-links">
+      <a href="{{ '/' | relative_url }}">home</a>
+      <a href="{{ '/writings/' | relative_url }}">writings</a>
+      <a href="{{ '/resume/' | relative_url }}">resume</a>
+      <div class="theme-toggle">
+        <span class="toggle-icon">☀️</span>
+        <button class="toggle-track" id="theme-toggle" aria-label="Toggle dark mode">
+          <span class="toggle-thumb"></span>
+        </button>
+        <span class="toggle-icon">🌙</span>
       </div>
-      <!-- site-content -->
-
-      {% include footer.html %}
-
     </div>
+  </nav>
 
-  </body>
+  <main class="site-main">
+    {{ content }}
+  </main>
 
+  <footer class="site-footer">
+    © {{ site.time | date: '%Y' }} Jerome Francis
+  </footer>
+</body>
 </html>
