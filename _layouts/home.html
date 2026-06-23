@@ -1,0 +1,59 @@
+---
+layout: default
+---
+<div class="bio">
+  <p>Hi — I'm Jerome, a Masters student at <a href="https://mila.quebec">Mila</a> and
+  <a href="https://umontreal.ca">Université de Montréal</a>, working on deep learning with a
+  focus on reinforcement learning and decision making. Previously a Data Scientist at TCS.</p>
+
+  <p>My undergraduate was at TKM College of Engineering in Computer Science. I like reading
+  science fiction, cycling in the evening, and listening to film scores — lately
+  <a href="https://www.youtube.com/watch?v=gEXZmoai-OI">Aggressive Expansion</a>, the
+  <a href="https://www.youtube.com/watch?v=wL6jh9thk8Q">Iron Man 3 theme</a>, and
+  <a href="https://www.youtube.com/watch?v=3Xqqs5bCHpY">Love &amp; Work</a>.</p>
+</div>
+
+<hr class="section-divider">
+
+<section class="home-section">
+<div class="section-label">Recent</div>
+<ul class="now-list">
+<li>Studying RL papers and implementing projects across different RL concepts.</li>
+<li>Reading <em>Gödel, Escher, Bach: An Eternal Golden Braid</em> by Douglas Hofstadter.</li>
+</ul>
+</section>
+
+<hr class="section-divider">
+
+<section class="home-section">
+<div class="section-label">Latest writing</div>
+{% assign latest = site.posts | first %}
+{% if latest %}
+<div class="latest-post">
+  <div class="post-meta-line">
+    <time>{{ latest.date | date: "%-d %b %Y" }}</time>{% if latest.tags.size > 0 %} · {{ latest.tags | first | replace: '-', ' ' }}{% endif %}
+  </div>
+  <h2 class="latest-title"><a href="{{ latest.url | relative_url }}">{{ latest.title }}</a></h2>
+  {% if latest.description %}
+  <p class="latest-excerpt">{{ latest.description }}</p>
+  {% else %}
+  <p class="latest-excerpt">{{ latest.excerpt | strip_html | truncate: 220 }}</p>
+  {% endif %}
+  <a href="{{ latest.url | relative_url }}" class="read-more">Read →</a>
+</div>
+{% endif %}
+</section>
+
+<hr class="section-divider">
+
+<section class="home-section">
+<div class="section-label">Publications</div>
+{% for pub in site.data.publications %}
+<div class="pub-entry">
+  <p class="pub-authors">{{ pub.authors | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
+  <p class="pub-title"><em>{{ pub.title }}</em></p>
+  <p class="pub-venue">{{ pub.venue }}, {{ pub.year }}{% if pub.links %}{% if pub.links.pdf %}&nbsp;<a class="pub-link" href="{{ pub.links.pdf }}" target="_blank" rel="noopener">[PDF]</a>{% endif %}{% if pub.links.journal %}&nbsp;<a class="pub-link" href="{{ pub.links.journal }}" target="_blank" rel="noopener">[Journal]</a>{% endif %}{% endif %}</p>
+</div>
+{% unless forloop.last %}<hr class="pub-divider">{% endunless %}
+{% endfor %}
+</section>

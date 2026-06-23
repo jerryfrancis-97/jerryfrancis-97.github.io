@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Playing Atari with Deep Reinforcement Learning
-summary: This note covers the original DQN setup for learning Atari control directly from pixels.
+date: 2020-10-03
+description: The original DQN setup for learning Atari control directly from pixels — Q-learning with a deep network, experience replay, and fixed targets.
+tags: [reinforcement-learning]
 ---
 
 - - Using Q-learning with deep learning techniques (neural networks) on ATARI games

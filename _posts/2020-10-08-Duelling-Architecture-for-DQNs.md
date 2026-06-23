@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Duelling Architecture for DQNs
-summary: Duelling networks split value and advantage estimation to make state-value learning cleaner and more stable.
+date: 2020-10-08
+description: Duelling networks split value and advantage estimation to make state-value learning cleaner and more stable.
+tags: [reinforcement-learning]
 ---
 
 - - Based on Advantage functions other than Q-learning, it separates the representation of state values and (state-dependent) action advantages.
