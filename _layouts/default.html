@@ -14,6 +14,16 @@
   <link rel="manifest" href="{{ '/graphics/favicon_io/site.webmanifest' | relative_url }}">
   <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
   {% seo %}
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)'], ['$', '$']],
+        displayMath: [['\\[', '\\]'], ['$$', '$$']]
+      },
+      options: { skipHtmlTags: ['script','noscript','style','textarea','pre'] }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
 </head>
 <body>
   <nav class="site-nav">

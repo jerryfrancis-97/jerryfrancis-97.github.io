@@ -1,5 +1,5 @@
 :root {
-  --bg: #e8f5ee;
+  --bg: #f5f5f0;
   --text: #112318;
   --text-sec: #3a5848;
   --link: #1a6644;
@@ -10,6 +10,9 @@
   --tag-text: #1a6644;
   --toggle-track-bg: #b8d8c8;
   --toggle-thumb-bg: #1a6644;
+  --pub-title: #0c1810;
+  --pub-authors: #223428;
+  --pub-venue: #2e4438;
 }
 
 html.dark {
@@ -24,4 +27,7 @@ html.dark {
   --tag-text: #5ac8a0;
   --toggle-track-bg: #1a6644;
   --toggle-thumb-bg: #5ac8a0;
+  --pub-title: #a8ccc4;
+  --pub-authors: #6a9a84;
+  --pub-venue: #7aaa92;
 }
